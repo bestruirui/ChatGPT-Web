@@ -71,7 +71,7 @@ function chatStripe(isAi, value, uniqueId) {
                     </div>
                     <div>
                         <div class="text-sm">
-                            <a href="#" class="font-medium text-gray-200">${isAi ? 'AI' : 'You'}</a>
+                            <a href="#" class="font-medium text-gray-200">${isAi ? 'AI' : '你'}</a>
                         </div>
                         <div class="mt-1 text-sm text-gray-400">
                             <p class="message" id=${uniqueId}>${value}</p>
@@ -109,7 +109,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://ai-hdl4.onrender.com', {
+    const response = await fetch('https://proxy-one-murex.vercel.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
