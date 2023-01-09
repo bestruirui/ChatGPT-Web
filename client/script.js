@@ -109,7 +109,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://proxy-one-murex.vercel.app', {
+    const response = await fetch('http://chatgptapi.bestrui.top', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
